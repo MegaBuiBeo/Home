@@ -83,6 +83,20 @@ header .info-text .scroll::before{
     animation: pulse 3s infinite;
 }
 
+header .info-text .discord{
+    position: absolute;
+    bottom: 88%;
+    left: 92%;
+    color: #fff;
+    transform: translate(0, -50%);
+    transition: all 0.5s;
+    font-size: 45px;
+}
+
+header .info-text .discord:hover{
+    opacity: 0.7;
+}
+
 @keyframes pulse {
     0%, 100%{
         opacity: 0;
@@ -221,6 +235,33 @@ header .info-text .scroll::before{
 .scroll-top:hover{
     border-color: #fff;
     box-shadow: none;
+}
+
+footer .socials{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+footer .socials a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #BDBDBD;
+}
+
+@media screen and (max-width: 992px) {
+    nav .links{
+        padding: 0 40px;
+    }
+
+    footer > a{
+        font-size: 20px;
+    }
+
+    footer .socials a{
+        font-size: 16px;
+    }
+
 }
 
 @media screen and (max-width: 720px) {
